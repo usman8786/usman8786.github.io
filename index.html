@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Usman's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha384-BxC6ChntpGgKmKrpx92OH0XLFH/pH7vY4sDrpSC8xyhzfIKxiX4vTLQyCyCqD6gd"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Reset CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        color: #333;
+        background-color: #f8f9fa;
+        line-height: 1.6;
+      }
+      header {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+          url("header-background.jpg") center/cover no-repeat;
+        color: #fff;
+        padding: 5em 2em;
+        text-align: center;
+        position: relative;
+      }
+      header h1 {
+        font-size: 3.5em;
+        margin-bottom: 0.2em;
+        font-family: "Montserrat", sans-serif;
+        white-space: nowrap;
+      }
+      header p {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+      }
+      header .role {
+        font-size: 1.5em;
+        color: #ffdd57;
+        margin-bottom: 1em;
+        font-weight: bold;
+      }
+      header img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 5px solid #ffdd57;
+        margin-bottom: em;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      }
+      h4 {
+        margin-top: 1.5em; /* Adjust the top margin to create space */
+        margin-bottom: 0.5em; /* Optional: Add a bit of space below if needed */
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #333;
+      }
+      header a {
+        color: #ddd;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 1em;
+        transition: color 0.3s ease;
+      }
+      header a:hover {
+        color: #ffdd57;
+      }
+
+      /* Button styling */
+      .button {
+        display: inline-block;
+        padding: 0.8em 2em;
+        margin-top: 1em;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #333;
+        background-color: #ffdd57;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .button:hover {
+        background-color: #ffd633;
+        color: #000;
+      }
+
+      .content {
+        padding: 4em 2em;
+        background-color: #fff;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        gap: 2em;
+        text-align: center;
+      }
+
+      .section-title {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+        color: #333;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .box {
+        background-color: #f1f5f9;
+        padding: 2em;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+      }
+      .box h3 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 0.5em;
+      }
+      .box p,
+      .box ul li {
+        color: #555;
+        line-height: 1.6;
+      }
+      .box ul {
+        margin-top: 1em;
+        padding-left: 1.5em;
+        list-style-type: square;
+      }
+      footer {
+        text-align: center;
+        padding: 2em;
+        background-color: #333;
+        color: #fff;
+      }
+      footer a {
+        color: #ffdd57;
+        text-decoration: none;
+        font-size: 1.1em;
+        margin: 0 1em;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      .contact-icons i {
+        margin-right: 0.5em;
+      }
+      .stripe {
+        background-color: #ffdd57;
+        height: 5px;
+        width: 100%;
+      }
+
+      /* Mobile view adjustments */
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 1.8em;
+        }
+        header img {
+          width: 160px;
+          height: 160px;
+        }
+        header .email {
+          font-size: 0.9em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="profile.jpg" alt="Muhammad Usman Profile Picture" />
+      <h1>Muhammad Usman</h1>
+      <p class="role">Software Engineer</p>
+      <p class="email">
+        <a href="mailto:usman.mushtaq8786@gmail.com" class="contact-icons">
+          <i class="bi bi-envelope"></i> usman.mushtaq8786@gmail.com
+        </a>
+      </p>
+      <p>
+        <a
+          href="https://www.linkedin.com/in/muhammad-usman111"
+          target="_blank"
+          class="contact-icons"
+        >
+          <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        |
+        <a
+          href="https://github.com/usman8786"
+          class="contact-icons"
+          target="_blank"
+        >
+          <i class="bi bi-github"></i> GitHub
+        </a>
+      </p>
+      <!-- Download CV Button -->
+      <a
+        class="button"
+        href="Muhammad Usman(Software Engineer).pdf"
+        download="Muhammad Usman CV.pdf"
+      >
+        <i class="bi bi-download"></i> Download CV
+      </a>
+
+      <!-- Contact Button -->
+      <a class="button" href="tel:+923225611112">
+        <i class="bi bi-telephone"></i> Contact
+      </a>
+    </header>
+
+    <div class="stripe"></div>
+    <div class="content">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="box">
+          <p>
+            Hardworking and technically proficient Engineer who thrives when
+            facing challenges and tackling complex problems. Works well with
+            business leaders to understand business issues and define system
+            requirements. Looking for a challenging role in a reputable
+            organization to utilize my technical, database, and management
+            skills for the growth of the organization as well as to enhance my
+            knowledge about new and emerging trends in the IT sector.
+          </p>
+        </div>
+
+        <h2 class="section-title">Skills</h2>
+        <div class="box">
+          <ul>
+            <li>
+              Programming Languages: Python, JavaScript (Node.js), Nest.js
+            </li>
+            <li>Frameworks: ERPNext, Frappe, Express.js</li>
+            <li>Database Management: MongoDB, MariaDB</li>
+            <li>Cloud & API Services: AWS (Lambda, S3, EC2), Firebase</li>
+            <li>Web Services: RESTful APIs</li>
+            <li>Version Control: GitHub</li>
+          </ul>
+        </div>
+
+        <h2 class="section-title">Highlighted Projects</h2>
+        <div class="box">
+          <ul>
+            <li>
+              <strong>Sindh School Daily Monitoring System (SSDMS)</strong>:
+              Spearheaded for the Sindh government, enhancing data transparency
+              and providing insights into daily school attendance and resource
+              management.
+            </li>
+            <li>
+              <strong>UNICEF Child Protection Initiatives</strong>: Developed
+              systems to streamline processes for child protection services,
+              improving data accessibility and workflow efficiency.
+            </li>
+            <li>
+              <strong>Custom ERP Solutions</strong>: Built and customized ERP
+              systems for clients like Pakistan State Oil and Hyundai Islamabad,
+              improving operational efficiency and data management capabilities.
+            </li>
+            <li>
+              <strong>Falaya.com</strong>: Worked as a back-end developer,
+              implementing AWS Lambda functions for PDF processing automation
+              and creating APIs.
+            </li>
+          </ul>
+        </div>
+
+        <h2 class="section-title">Experience</h2>
+        <div class="box">
+          <h3>Software Engineer at Micromerger Pvt. Ltd.</h3>
+          <span>(Aug 2021 - Present)</span>
+          <h4>Python / ERPNext</h4>
+          <ul>
+            <li>
+              Spearheaded projects for the Sindh government, including SSDMS,
+              SELD, and DGME.
+            </li>
+            <li>
+              Customized Frappe Framework and ERP systems for clients like
+              Pakistan State Oil.
+            </li>
+            <li>
+              Developed Python scripts for data analysis and report generation.
+            </li>
+          </ul>
+
+          <h4>Nest.js</h4>
+          <ul>
+            <li>
+              Back-end development for projects like Falaya.com, using AWS
+              Lambda for automation.
+            </li>
+            <li>
+              Integrated push notifications and SMS services for user
+              engagement.
+            </li>
+          </ul>
+
+          <h4>Node.js</h4>
+          <ul>
+            <li>
+              Built RESTful APIs for various applications, enhancing backend
+              functionality and scalability.
+            </li>
+            <li>
+              Optimized back-end services using Node.js, Express, and MongoDB.
+            </li>
+            <li>
+              Worked with front-end teams to implement real-time notifications
+              using Socket.io.
+            </li>
+            <li>
+              Used GitHub for version control and collaborated on code
+              integration.
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Backend Developer at Asasa.com</h3>
+          <span>(Mar 2020 - Jul 2021)</span>
+          <h4>Node.js</h4>
+          <ul>
+            <li>
+              Restructured the back-end for scalability and robustness using
+              Node.js and MongoDB.
+            </li>
+            <li>
+              Developed RESTful APIs and deployed on Heroku with FCM for mobile
+              notifications.
+            </li>
+            <li>
+              Implemented Socket.io for real-time notifications on the web
+              platform.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 - 2027 | Muhammad Usman. All rights reserved.</p>
+      <p>
+        <a
+          href="https://github.com/usman8786"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-github"></i> GitHub Profile
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
